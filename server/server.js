@@ -14,5 +14,5 @@ app.use(cors());
 router(app);
 
 app.listen(port, () => {
-    console.log(`Server listening on ${port}`);
+    console.log(`Server is listening on ${port}`);
 });
