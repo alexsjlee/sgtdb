@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Grade Table Backend</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class='container'>
+            <div class="row justify-content-center">
+                <h1>Student Grade Table Backend</h1>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header">GET /students</h3>
+                <div class="card-block">
+                    <h4 class='card-title'>Fetches all students in database.</h4>
+                    <p class="card-text">Doesn't need anything passed along.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header">POST /students</h3>
+                <div class="card-block">
+                    <h4 class='card-title'>Creates a new student entry.</h4>
+                    <p class="card-text">Needs the student object passed along.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header">DELETE /students/:id</h3>
+                <div class="card-block">
+                    <h4 class='card-title'>Deletes a specific student.</h4>
+                    <p class="card-text">Needs the _.id passed along.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header">PATCH /students/:id</h3>
+                <div class="card-block">
+                    <h4 class='card-title'>Edits an existing student.</h4>
+                    <p class="card-text">Needs the _.id and new student object passed along.</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

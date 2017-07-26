@@ -1,8 +1,14 @@
 var { mongose } = require('./db/mongoose');
 const { ObjectID } = require('mongodb');
 var { Student } = require('./models/student');
+const fs = require('fs');
 
 module.exports = function(app) {
+    app.get('/', (req, res) => {
+        var html = fs.readFileSync('./server/index.html', 'utf8');
+        res.send(html);
+    });
+
     app.get('/students', (req, res) => {
         Student.find().then((students) => {
             res.send({students});
